@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static edu.neu.mad_sea.amrutapathak.BuildConfig.*;
+import static edu.neu.mad_sea.amrutapathak.BuildConfig.VERSION_NAME;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button btnAbout;
@@ -36,10 +39,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         TextView tvVersionCode = (TextView) findViewById(R.id.tvVersionCode);
-        tvVersionCode.setText("Version Code : "+BuildConfig.VERSION_CODE);
+        tvVersionCode.setText(""+VERSION_CODE);
 
         TextView tvVersionName = (TextView) findViewById(R.id.tvVersionName);
-        tvVersionName.setText("Version Name : "+BuildConfig.VERSION_NAME);
+        tvVersionName.setText(""+VERSION_NAME);
+
+        getSupportActionBar().setTitle("Amruta Pathak");
     }
 
     public void openDescActivity(){

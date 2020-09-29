@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appId"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg3"
@@ -13,29 +14,29 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About"
-        />
+        android:text="About" />
+
     <Button
         android:id="@+id/btnError"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Generate Error"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_gravity="center"/>
-    <TextView android:id="@+id/tvVersionCode"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:textSize="15dp"
         android:layout_gravity="center"
-        />
+        android:text="Generate Error" />
 
-    <TextView android:id="@+id/tvVersionName"
+    <TextView
+        android:id="@+id/tvVersionCode"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:textSize="15dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        />
+        android:layout_weight="0"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvVersionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15dp" />
 
 </LinearLayout>
