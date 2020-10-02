@@ -1,4 +1,36 @@
 <resources>
     <string name="app_name">NEUSEA-AmrutaPathak</string>
     <string name="title">Amruta Pathak</string>
+    <string name="descTitle">About Me</string>
+
+    <string name="dictHeading">Dictionary</string>
+    <string name="numberOfAlphabets">Please specify the number of alphabets :</string>
+    <string name="constraintText"> Please specify the alphabets  you would like to use:  </string>
+    <string name="letterPlacementText">Add a letter at specific positions using spaces</string>
+    <string name="btnSubmitText">Submit</string>
+    <string name="btnAckText">Acknowledge</string>
+    <string name="btnClearText">Clear</string>
+
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
 </resources>
