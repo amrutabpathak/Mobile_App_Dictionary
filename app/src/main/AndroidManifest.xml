@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.neu.mad_sea.amrutapathak"
-    >
+    package="edu.neu.mad_sea.amrutapathak">
 
     <application
         android:allowBackup="true"
@@ -10,12 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DescriptionActivity" android:label="About Me">
+        <activity android:name=".AcknowledgementActivity"></activity>
+        <activity android:name=".TestDictionaryActivity" android:label="@string/dictHeading"/>
+        <activity
+            android:name=".DescriptionActivity"
+            android:label="@string/descTitle">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
