@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnAbout;
     private Button btnError;
+    private Button btnDictionary;
+
     private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnDictionary = (Button) findViewById(R.id.btnDictionary);
+        btnDictionary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTestDictionaryActivity();
+            }
+        });
+
         TextView tvVersionCode = (TextView) findViewById(R.id.tvVersionCode);
         tvVersionCode.setText(""+VERSION_CODE);
 
@@ -56,4 +66,10 @@ public class MainActivity extends AppCompatActivity {
         throw new NullPointerException("An exception occurred");
     }
 
+
+
+    public void openTestDictionaryActivity(){
+        Intent intentDict = new Intent(this, TestDictionaryActivity.class);
+        startActivity(intentDict);
+    }
 }
