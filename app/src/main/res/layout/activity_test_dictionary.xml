@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestDictionaryActivity"
+    android:orientation="vertical"
+    android:background=" @drawable/bg3">
+
+    <TableLayout
+        android:id="@+id/tblLayoutDict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+        <TableRow
+            android:id="@+id/rowAlphabetsNum"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/numberOfAlphabets"
+
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".6"
+
+                android:text="@string/numberOfAlphabets"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spnrNumberofLetters"
+
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight=".4"
+
+
+                android:dropDownWidth="120dp"
+                android:spinnerMode="dropdown" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvConstraint"
+
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+
+
+                android:text="@string/constraintText"
+                android:textSize="16sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowAllowedAlphabets"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/etconstraintText"
+
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+
+                android:inputType="text"
+                android:textSize="16sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowLetterPlacement"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvLetterPlacement"
+
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+
+                android:text="@string/letterPlacementText"
+                android:textSize="16sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/etLetterPlacement"
+
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+              android:inputType="text"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowBtns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:text="@string/btnSubmitText"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:layout_width="match_parent"
+                style="android:attr/ButtonBarButtonStyle"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/btnAck"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAckText"
+                style="android:attr/ButtonBarButtonStyle"
+                android:layout_weight=".3"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+
+                />
+
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="android:attr/ButtonBarButtonStyle"
+                android:layout_gravity="end"
+                android:layout_weight=".3"
+                android:gravity="center_horizontal"
+                android:text="@string/btnClearText" />
+
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+
+    <TextView
+        android:id="@+id/resultId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tblLayoutDict"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="false"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:text=""
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultId"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+    </ListView>
+
+
+</RelativeLayout>
