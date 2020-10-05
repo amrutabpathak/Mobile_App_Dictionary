@@ -9,8 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AcknowledgementActivity"></activity>
-        <activity android:name=".TestDictionaryActivity" android:label="@string/dictHeading"/>
+        <activity android:name=".AcknowledgementActivity" android:label="@string/ackHeading">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TestDictionaryActivity" />
+        </activity>
+        <activity android:name=".TestDictionaryActivity" android:label="@string/dictHeading">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity
             android:name=".DescriptionActivity"
             android:label="@string/descTitle">
