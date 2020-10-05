@@ -14,27 +14,31 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:text="Name : Amruta Pathak"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:textStyle="bold|italic"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:text="Email : pathak.am@northeastern.edu"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:textStyle="bold|italic"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:text="Semester : Fall 2020 Last sem to go!!!"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:textStyle="bold|italic"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:text="Major : CS"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:textStyle="bold|italic"/>
 
     <ImageView android:id="@+id/ivSelfImage"
         android:layout_width="match_parent"
