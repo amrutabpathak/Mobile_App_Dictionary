@@ -3,13 +3,20 @@
     <string name="title">Amruta Pathak</string>
     <string name="descTitle">About Me</string>
 
-    <string name="dictHeading">Dictionary</string>
+    <string name="dictHeading">Test Dictionary</string>
     <string name="numberOfAlphabets">Please specify the number of alphabets :</string>
     <string name="constraintText"> Please specify the alphabets  you would like to use:  </string>
     <string name="letterPlacementText">Add a letter at specific positions using spaces</string>
-    <string name="btnSubmitText">Submit</string>
+    <string name="btnSubmitText">Find</string>
     <string name="btnAckText">Acknowledge</string>
     <string name="btnClearText">Clear</string>
+    <string name="spnrPromptNoOfLetters">Select</string>
+
+    <string name="ackHeading">Acknowledgements</string>
+    <string name="AckProfessor">My lovely prof: Adrienne Slaughter</string>
+    <string name="ackTAs">Amazing TAs : Dennis Cheng, Curtice Lockhart</string>
+
+
 
     <string-array name="numbers">
         <item>1</item>
